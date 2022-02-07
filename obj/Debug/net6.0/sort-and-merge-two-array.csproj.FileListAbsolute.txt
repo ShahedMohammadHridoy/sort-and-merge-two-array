@@ -1,0 +1,15 @@
+D:\sort-and-merge-two-array\bin\Debug\net6.0\sort-and-merge-two-array.exe
+D:\sort-and-merge-two-array\bin\Debug\net6.0\sort-and-merge-two-array.deps.json
+D:\sort-and-merge-two-array\bin\Debug\net6.0\sort-and-merge-two-array.runtimeconfig.json
+D:\sort-and-merge-two-array\bin\Debug\net6.0\sort-and-merge-two-array.dll
+D:\sort-and-merge-two-array\bin\Debug\net6.0\ref\sort-and-merge-two-array.dll
+D:\sort-and-merge-two-array\bin\Debug\net6.0\sort-and-merge-two-array.pdb
+D:\sort-and-merge-two-array\obj\Debug\net6.0\sort-and-merge-two-array.csproj.AssemblyReference.cache
+D:\sort-and-merge-two-array\obj\Debug\net6.0\sort-and-merge-two-array.GeneratedMSBuildEditorConfig.editorconfig
+D:\sort-and-merge-two-array\obj\Debug\net6.0\sort-and-merge-two-array.AssemblyInfoInputs.cache
+D:\sort-and-merge-two-array\obj\Debug\net6.0\sort-and-merge-two-array.AssemblyInfo.cs
+D:\sort-and-merge-two-array\obj\Debug\net6.0\sort-and-merge-two-array.csproj.CoreCompileInputs.cache
+D:\sort-and-merge-two-array\obj\Debug\net6.0\sort-and-merge-two-array.dll
+D:\sort-and-merge-two-array\obj\Debug\net6.0\ref\sort-and-merge-two-array.dll
+D:\sort-and-merge-two-array\obj\Debug\net6.0\sort-and-merge-two-array.pdb
+D:\sort-and-merge-two-array\obj\Debug\net6.0\sort-and-merge-two-array.genruntimeconfig.cache
