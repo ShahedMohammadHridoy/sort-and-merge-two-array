@@ -26,12 +26,8 @@ namespace Program
 	{
 		static void Main(string[] args)
 		{
-			int[] amount = {20,10,50,70,30,5};
-            
+			int[] amount = {20,10,50,70,30,5};            
             string[] name = {"A","B","C","D","E","F"};
-
-            
-            int[] tempInt = new int[amount.Length];
 
             List<Data> dataList = new List<Data>();
             for(int i=0; i<amount.Length; i++){
@@ -39,10 +35,6 @@ namespace Program
                 dataList.Add(d);
             }
 
-            for(int i=0; i<amount.Length; i++){
-                tempInt[i] = amount[i];
-            }
-            
             //sorting
             int temp;
             for (int j = 0; j <= amount.Length - 2; j++) {
