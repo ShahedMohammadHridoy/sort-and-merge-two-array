@@ -7,6 +7,21 @@ using System.Threading.Tasks;
 
 namespace Program
 {
+    class Data{
+        int amount;
+        string name;
+        public Data(int a, string n){
+            this.amount = a;
+            this.name = n;
+        }
+
+        public int getAmount(){
+            return this.amount;
+        }
+        public string getName(){
+            return this.name;
+        }
+    }
 	class Program
 	{
 		static void Main(string[] args)
@@ -15,8 +30,15 @@ namespace Program
             
             string[] name = {"A","B","C","D","E","F"};
 
-            int[] tempInt = new int[amount.Length];
             
+            int[] tempInt = new int[amount.Length];
+
+            List<Data> dataList = new List<Data>();
+            for(int i=0; i<amount.Length; i++){
+                Data d = new Data(amount[i],name[i]);
+                dataList.Add(d);
+            }
+
             for(int i=0; i<amount.Length; i++){
                 tempInt[i] = amount[i];
             }
@@ -33,9 +55,14 @@ namespace Program
                 }
             }
 
+            //print amount with name
             for(int i=0; i<amount.Length; i++){
                 Console.Write(amount[i] + " - ");
-                Console.WriteLine(name[Array.IndexOf(tempInt,amount[i])]);
+                for(int j=0; j<amount.Length; j++){
+                    if(amount[i]==dataList[j].getAmount()){
+                        Console.WriteLine(dataList[j].getName());
+                    }
+                }
             }
 		}
 	}
