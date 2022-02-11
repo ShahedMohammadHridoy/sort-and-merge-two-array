@@ -5,56 +5,34 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Program
-{
-    class Data{
-        int amount;
-        string name;
-        public Data(int a, string n){
-            this.amount = a;
-            this.name = n;
-        }
-
-        public int getAmount(){
-            return this.amount;
-        }
-        public string getName(){
-            return this.name;
-        }
-    }
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			int[] amount = {20,10,50,70,30,5};            
-            string[] name = {"A","B","C","D","E","F"};
-
-            List<Data> dataList = new List<Data>();
-            for(int i=0; i<amount.Length; i++){
-                Data d = new Data(amount[i],name[i]);
-                dataList.Add(d);
-            }
-
+namespace Application {
+	class Program {
+		static void Main(string[] args) {
+			int[] amount = {20,10,50,70,30,5,100};            
+            string[] name = {"A","B","C","D","E","F","a"};
+            
             //sorting
             int temp;
+            string tempName;
             for (int j = 0; j <= amount.Length - 2; j++) {
                 for (int i = 0; i <= amount.Length - 2; i++) {
                     if (amount[i] < amount[i + 1]) {
+                        
                         temp = amount[i + 1];
+                        tempName = name[i+1];
+
                         amount[i + 1] = amount[i];
+                        name[i+1]=name[i];
+                        
                         amount[i] = temp;
+                        name[i] = tempName;
                     }
                 }
             }
 
-            //print amount with name
+            //print
             for(int i=0; i<amount.Length; i++){
-                Console.Write(amount[i] + " - ");
-                for(int j=0; j<amount.Length; j++){
-                    if(amount[i]==dataList[j].getAmount()){
-                        Console.WriteLine(dataList[j].getName());
-                    }
-                }
+                Console.WriteLine(amount[i]+" - "+name[i]);
             }
 		}
 	}
